@@ -1,6 +1,6 @@
 /*
 
-  v.1.0.1
+  v.1.1.2
 
   Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
   table_generator.js
