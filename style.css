@@ -1,7 +1,7 @@
 
 /*
 
-    v.1.1.2
+    v.1.1.4
 
     Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
     style.css
@@ -182,77 +182,78 @@ p{
 
 /* Responsiveness */
 
-@media only screen and (max-width: 600px){
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px){
 
-    #main-periodic-table{
-        margin-top: 10vh;
-    }
+        #main-periodic-table{
+            margin-top: 10vh;
+        }
 
-    .element-cell, .void, .contents, .contents:hover{
-        width: 17px;
-        height: 17px;
-    }
-    
-    .contents:hover{
-        border: 0.34px solid black;
-    }
+        .element-cell, .void, .contents, .contents:hover{
+            width: 15px;
+            height: 15px;
+        }
+        
+        .contents:hover{
+            border: 0.3px solid black;
+        }
 
-    #elem-symbol{
-        font-size: xx-small;
-    }
+        #elem-symbol{
+            font-size: xx-small;
+        }
 
-    img{
-        height: 6.8px;
-        width: 6.8px;
-    }
+        img{
+            height: 6px;
+            width: 6px;
+        }
 
-    /* Optimized sizes */
+        /* Optimized sizes */
 
-    /* Calcium, Zinc, Flerovium, Oganesson*/
-    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
-        width: 8.5px;
-    }
+        /* Calcium, Zinc, Flerovium, Oganesson*/
+        #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+            width: 7.5px;
+        }
 
-    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
-    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
-        width: 10.2px;
-    }
+        /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+        #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+            width: 9px;
+        }
 
-    /* Arsenic */
-    #cell-4-15 img, #cell-7-4 img{
-        width: 5.1px;
-    }
+        /* Arsenic */
+        #cell-4-15 img, #cell-7-4 img{
+            width: 4.5px;
+        }
 
-    /* Rutherfordium */
-    #cell-7-4 img{
-        width: 5.78px;
-    }
+        /* Rutherfordium */
+        #cell-7-4 img{
+            width: 5.1px;
+        }
 
-    /* END */
+        /* END */
 
-    p{
-        margin-top: 0.17px;
-        margin-bottom: 0.17px;
-    }
+        p{
+            margin-top: 0.15px;
+            margin-bottom: 0.15px;
+        }
 
-    .contents:hover #elem-symbol{
-        font-size: 0.119em;
-    }
-    
-    .contents:hover #atomic-num,
-    .contents:hover #elem-img, 
-    .contents:hover #elem-name, 
-    /* .contents:hover #elem-radioactivity, */
-    .contents:hover #atomic-mass {
-        font-size: 0.102em;
-    }
+        .contents:hover #elem-symbol{
+            font-size: 0.105em;
+        }
+        
+        .contents:hover #atomic-num,
+        .contents:hover #elem-img, 
+        .contents:hover #elem-name, 
+        /* .contents:hover #elem-radioactivity, */
+        .contents:hover #atomic-mass {
+            font-size: 0.09em;
+        }
 
-    .contents:hover #elem-radioactivity,
-    .contents:hover #atomic-num{
-        font-size: 0.068em;
+        .contents:hover #elem-radioactivity,
+        .contents:hover #atomic-num{
+            font-size: 0.06em;
+        }
+        
+        .contents:hover #atomic-mass{
+            font-size: 0.051em!important;
+        }
     }
-    
-    .contents:hover #atomic-mass{
-        font-size: 0.0578em!important;
-    }
-}
