@@ -182,7 +182,7 @@ p{
 
 /* Responsiveness */
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
 
     #main-periodic-table{
         margin-top: 10vh;
