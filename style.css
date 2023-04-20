@@ -182,8 +182,7 @@ p{
 
 /* Responsiveness */
 
-    @media only screen and (max-width: 375px){
-
+    @media only screen and (max-width: 600px){
         .element-cell, .void{
             margin: 1.2px;
         }
@@ -263,7 +262,5 @@ p{
             width: 20px;
             height: 20px;
         }
-
-        
 
     }
