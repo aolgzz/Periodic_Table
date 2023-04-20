@@ -1,6 +1,8 @@
 
 /*
 
+    v.1.1.4
+
     Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
     style.css
     
@@ -230,21 +232,21 @@ p{
             border: 0.25px solid black;
             width: 22px;
             height: 22px;
-            font-size: xx-small;
+            font-size: large;
         }
 
         .contents:hover #elem-symbol{
-    font-size: 0.35em;
-}
-
-.contents:hover #atomic-num,
-.contents:hover #elem-img, 
-.contents:hover #elem-name, 
-/* .contents:hover #elem-radioactivity, */
-.contents:hover #atomic-mass {
-    display: flex;
-    font-size: 0.3em;
-}
+            font-size: 0.15em;
+        }
+        
+        .contents:hover #atomic-num,
+        .contents:hover #elem-img, 
+        .contents:hover #elem-name, 
+        /* .contents:hover #elem-radioactivity, */
+        .contents:hover #atomic-mass {
+            display: flex;
+            font-size: 0.1em;
+        }
 
 
         /* Radioactive elements*/
@@ -269,10 +271,11 @@ p{
         #cell-7-16 .contents:hover,
         #cell-7-17 .contents:hover,
         #cell-7-18 .contents:hover{
-            font-size: 0.35em;
+            font-size: 0.55em!important;
             width: 20px;
             height: 20px;
         }
+        
 
         .contents:hover #elem-radioactivity,
         .contents:hover #atomic-num{
@@ -280,7 +283,6 @@ p{
         }
 
         .contents:hover #atomic-mass{
-            font-size: 0.17em!important;
+            font-size: 0.07em!important;
         }
-
     }
