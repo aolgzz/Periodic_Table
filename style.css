@@ -182,81 +182,88 @@ p{
 
 /* Responsiveness */
 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 375px){
 
-        #main-periodic-table{
-            margin-top: 10vh;
+        .element-cell, .void{
+            margin: 1.2px;
         }
 
-        .element-cell, .void, .contents, .contents:hover{
-            width: 15px;
-            height: 15px;
-        }
-        
-        .contents:hover{
-            border: 0.3px solid black;
-            width: 25px;
-            height: 25px;
+        .element-cell, .void, .contents{
+            width: 10px;
+            height: 10px;
 
-        }
-
-        #elem-symbol{
-            font-size: xx-small;
         }
 
         img{
             height: 6px;
             width: 6px;
+            /* border: 1px solid red; */
         }
 
         /* Optimized sizes */
 
-        /* Calcium, Zinc, Flerovium, Oganesson*/
-        #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
-            width: 7.5px;
-        }
+            /* Calcium, Zinc, Flerovium, Oganesson*/
+            #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+                width: 7.5px;
+            }
 
-        /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
-        #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
-            width: 9px;
-        }
+            /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+            #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+                width: 9px;
+            }
 
-        /* Arsenic */
-        #cell-4-15 img, #cell-7-4 img{
-            width: 4.5px;
-        }
+            /* Arsenic */
+            #cell-4-15 img, #cell-7-4 img{
+                width: 4.5px;
+            }
 
-        /* Rutherfordium */
-        #cell-7-4 img{
-            width: 5.1px;
-        }
+            /* Rutherfordium */
+            #cell-7-4 img{
+                width: 5.1px;
+            }
 
         /* END */
-
+        
+                
         p{
-            margin-top: 0.15px;
-            margin-bottom: 0.15px;
+            font-size: 0.35em;
         }
 
-        .contents:hover #elem-symbol{
-            font-size: 0.105em;
-        }
-        
-        .contents:hover #atomic-num,
-        .contents:hover #elem-img, 
-        .contents:hover #elem-name, 
-        /* .contents:hover #elem-radioactivity, */
-        .contents:hover #atomic-mass {
-            font-size: 0.09em;
+        .contents:hover{
+            border: 0.25px solid black;
+            width: 22px;
+            height: 22px;
+            font-size: xx-small;
         }
 
-        .contents:hover #elem-radioactivity,
-        .contents:hover #atomic-num{
-            font-size: 0.06em;
+
+        /* Radioactive elements*/
+        #cell-5-7 .contents:hover,
+        #cell-6-16 .contents:hover,
+        #cell-6-17 .contents:hover,
+        #cell-6-18 .contents:hover,
+        #cell-7-1 .contents:hover,
+        #cell-7-2 .contents:hover,
+        #cell-7-4 .contents:hover,
+        #cell-7-5 .contents:hover,
+        #cell-7-6 .contents:hover,
+        #cell-7-7 .contents:hover,
+        #cell-7-8 .contents:hover,
+        #cell-7-9 .contents:hover,
+        #cell-7-10 .contents:hover,
+        #cell-7-11 .contents:hover,
+        #cell-7-12 .contents:hover,
+        #cell-7-13 .contents:hover,
+        #cell-7-14 .contents:hover,
+        #cell-7-15 .contents:hover,
+        #cell-7-16 .contents:hover,
+        #cell-7-17 .contents:hover,
+        #cell-7-18 .contents:hover{
+            font-size: 0.35em;
+            width: 20px;
+            height: 20px;
         }
+
         
-        .contents:hover #atomic-mass{
-            font-size: 0.051em!important;
-        }
+
     }

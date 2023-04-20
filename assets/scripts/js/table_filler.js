@@ -1,6 +1,5 @@
 /*
 
-  v.1.1.2
   Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
 
   table_filler.js
