@@ -196,6 +196,9 @@ p{
         
         .contents:hover{
             border: 0.3px solid black;
+            width: 25px;
+            height: 25px;
+
         }
 
         #elem-symbol{
