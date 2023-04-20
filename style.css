@@ -234,17 +234,18 @@ p{
         }
 
         .contents:hover #elem-symbol{
-            font-size: 0.105em;
-        }
-        
-        .contents:hover #atomic-num,
-        .contents:hover #elem-img, 
-        .contents:hover #elem-name, 
-        /* .contents:hover #elem-radioactivity, */
-        .contents:hover #atomic-mass {
-            display: flex;
-            font-size: 0.09em;
-        }
+    font-size: 0.35em;
+}
+
+.contents:hover #atomic-num,
+.contents:hover #elem-img, 
+.contents:hover #elem-name, 
+/* .contents:hover #elem-radioactivity, */
+.contents:hover #atomic-mass {
+    display: flex;
+    font-size: 0.3em;
+}
+
 
         /* Radioactive elements*/
         #cell-5-7 .contents:hover,
@@ -268,18 +269,18 @@ p{
         #cell-7-16 .contents:hover,
         #cell-7-17 .contents:hover,
         #cell-7-18 .contents:hover{
-            font-size: 0.105em;
+            font-size: 0.35em;
             width: 20px;
             height: 20px;
         }
 
         .contents:hover #elem-radioactivity,
         .contents:hover #atomic-num{
-            font-size: 0.18em;
+            font-size: 0.2em;
         }
 
         .contents:hover #atomic-mass{
-            font-size: 0.0051em!important;
+            font-size: 0.17em!important;
         }
 
     }
