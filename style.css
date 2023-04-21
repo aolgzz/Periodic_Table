@@ -237,8 +237,8 @@ p{
 /******************************************************************************************/  
 
     .contents:hover{
-        width: 50px;
-        height: 50px;
+        width: 17px;
+        height: 17px;
     }
 /******************************************************************************************/      
 
@@ -265,3 +265,35 @@ p{
     }
 /******************************************************************************************/  
 }
+
+/******************************************************************************************/
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover,
+    #cell-6-16 .contents:hover,
+    #cell-6-17 .contents:hover,
+    #cell-6-18 .contents:hover,
+    #cell-7-1 .contents:hover,
+    #cell-7-2 .contents:hover,
+    #cell-7-4 .contents:hover,
+    #cell-7-5 .contents:hover,
+    #cell-7-6 .contents:hover,
+    #cell-7-7 .contents:hover,
+    #cell-7-8 .contents:hover,
+    #cell-7-9 .contents:hover,
+    #cell-7-10 .contents:hover,
+    #cell-7-11 .contents:hover,
+    #cell-7-12 .contents:hover,
+    #cell-7-13 .contents:hover,
+    #cell-7-14 .contents:hover,
+    #cell-7-15 .contents:hover,
+    #cell-7-16 .contents:hover,
+    #cell-7-17 .contents:hover,
+    #cell-7-18 .contents:hover{
+        /* font-size: 0.55em!important; */
+        font-size: 1px;
+        width: 20px;
+        height: 20px;
+    }
+
+/******************************************************************************************/
