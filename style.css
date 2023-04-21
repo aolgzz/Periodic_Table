@@ -235,10 +235,6 @@ p{
             font-size: large;
         }
 
-        .contents:hover p{
-            font-size: 0.1em;
-        }
-
         .contents:hover #elem-symbol{
             font-size: 0.15em;
         }
