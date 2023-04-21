@@ -225,14 +225,14 @@ p{
         
                 
         p{
-            font-size: 0.2em;
+            font-size: 0.35em;
         }
 
         .contents:hover{
             border: 0.25px solid black;
             width: 22px;
             height: 22px;
-            font-size: xx-small;
+            /* font-size: large; */
         }
         
         .contents:hover #elem-symbol{
@@ -246,7 +246,8 @@ p{
         /* .contents:hover #elem-radioactivity, */
         .contents:hover #atomic-mass {
             display: flex;
-            font-size: 0.1em;
+            /* font-size: 0.1em; */
+            font-size: 0.01em;
             color: red;
         }
 
@@ -273,7 +274,8 @@ p{
         #cell-7-16 .contents:hover,
         #cell-7-17 .contents:hover,
         #cell-7-18 .contents:hover{
-            font-size: 0.55em!important;
+            /* font-size: 0.55em!important; */
+            font-size: 0.01em;
             width: 20px;
             height: 20px;
         }
@@ -281,12 +283,13 @@ p{
 
         .contents:hover #elem-radioactivity,
         .contents:hover #atomic-num{
-            font-size: 0.2em;
+            /* font-size: 0.2em; */
+            font-size: 0.01em;
             color: red;
         }
 
         .contents:hover #atomic-mass{
-            font-size: 0.07em!important;
-            color: red;
+            /* font-size: 0.07em!important; */
+            font-size: 0.01em;
         }
     }
