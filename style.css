@@ -182,7 +182,7 @@ p{
 
 /* Responsiveness */
 
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 400px){
         .element-cell, .void{
             margin: 1.2px;
         }
@@ -236,7 +236,7 @@ p{
         }
         
         .contents:hover #elem-symbol{
-            font-size: 0.15em;
+            font-size: 1px;
             color: red;
         }
         
@@ -247,7 +247,7 @@ p{
         .contents:hover #atomic-mass {
             display: flex;
             /* font-size: 0.1em; */
-            font-size: 0.01em;
+            font-size: 1px;
             color: red;
         }
 
@@ -275,7 +275,7 @@ p{
         #cell-7-17 .contents:hover,
         #cell-7-18 .contents:hover{
             /* font-size: 0.55em!important; */
-            font-size: 0.01em;
+            font-size: 1px;
             width: 20px;
             height: 20px;
         }
@@ -284,12 +284,12 @@ p{
         .contents:hover #elem-radioactivity,
         .contents:hover #atomic-num{
             /* font-size: 0.2em; */
-            font-size: 0.01em;
+            font-size: 1px;
             color: red;
         }
 
         .contents:hover #atomic-mass{
             /* font-size: 0.07em!important; */
-            font-size: 0.01em;
+            font-size: 1px;
         }
     }
