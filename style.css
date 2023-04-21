@@ -180,3 +180,32 @@ p{
     font-size: 0.17em!important;
 }
 
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    .element-cell{
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        margin: 1.2px;
+    }
+    
+    .void{
+        width: 10px;
+        height: 10px;
+        border: 1px solid transparent;
+        margin: 1.2px;
+    }
+
+    .contents{
+        width: 10px;
+        height: 10px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+
+    .contents:hover{
+        width: 10px;
+        height: 10px;
+    }
+}

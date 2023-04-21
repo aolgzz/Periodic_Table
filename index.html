@@ -18,25 +18,7 @@
   </head>
 
   <body>
-    <div id="main-periodic-table"></div>
-    <div id="dimensiones-pantalla">
-      Actual width: <span id="ancho"></span> px
-    </div>
-    
-    <script>
-      // Función que actualiza las dimensiones de la pantalla en el div
-      function actualizarDimensiones() {
-        const ancho = window.innerWidth;
-        document.getElementById("ancho").textContent = ancho;
-      }
-    
-      // Actualizar dimensiones al cargar la página
-      actualizarDimensiones();
-    
-      // Actualizar dimensiones al cambiar el tamaño de la pantalla
-      window.addEventListener("resize", actualizarDimensiones);
-    </script>
-    
+    <div id="main-periodic-table"></div>    
   </body>
 
   <script src="assets/scripts/js/table_generator.js"></script>
