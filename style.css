@@ -225,14 +225,14 @@ p{
         
                 
         p{
-            font-size: 0.35em;
+            font-size: 0.2em;
         }
 
         .contents:hover{
             border: 0.25px solid black;
             width: 22px;
             height: 22px;
-            /* font-size: large; */
+            font-size: xx-small;
         }
         
         .contents:hover #elem-symbol{
