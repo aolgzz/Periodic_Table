@@ -204,8 +204,64 @@ p{
         font-size: 5px;
     }
 
-    .contents:hover{
-        width: 10px;
-        height: 10px;
+/******************************************************************************************/    
+    img{
+        height: 6px;
+        width: 6px
     }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 7.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 9px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 4.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 5.1px;
+    }
+
+    /* END */
+
+/******************************************************************************************/  
+
+    .contents:hover{
+        width: 17px;
+        height: 17px;
+    }
+/******************************************************************************************/      
+
+    .contents:hover #elem-symbol{
+        font-size: 1px;
+    }
+
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    /* .contents:hover #elem-radioactivity, */
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 1px;
+    }
+
+    .contents:hover #elem-radioactivity,
+    .contents:hover #atomic-num{
+        font-size: 1px;
+    }
+
+    .contents:hover #atomic-mass{
+        font-size: 1px!important;
+    }
+/******************************************************************************************/  
 }
