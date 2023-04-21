@@ -232,7 +232,7 @@ p{
             border: 0.25px solid black;
             width: 22px;
             height: 22px;
-            /* font-size: large; */
+            font-size: large;
         }
 
         .contents:hover p{
