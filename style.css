@@ -182,7 +182,7 @@ p{
 
 /* Responsiveness */
 
-    @media only screen and (max-width: 375px){
+    @media only screen and (max-width: 600px){
         .element-cell, .void{
             margin: 1.2px;
         }
@@ -232,7 +232,11 @@ p{
             border: 0.25px solid black;
             width: 22px;
             height: 22px;
-            font-size: large;
+            /* font-size: large; */
+        }
+        
+        .contents:hover p{
+            font-size: 0.1em;
         }
 
         .contents:hover #elem-symbol{
