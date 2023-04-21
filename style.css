@@ -235,12 +235,9 @@ p{
             /* font-size: large; */
         }
         
-        .contents:hover p{
-            font-size: 0.1em;
-        }
-
         .contents:hover #elem-symbol{
             font-size: 0.15em;
+            color: red;
         }
         
         .contents:hover #atomic-num,
@@ -250,6 +247,7 @@ p{
         .contents:hover #atomic-mass {
             display: flex;
             font-size: 0.1em;
+            color: red;
         }
 
 
@@ -284,9 +282,11 @@ p{
         .contents:hover #elem-radioactivity,
         .contents:hover #atomic-num{
             font-size: 0.2em;
+            color: red;
         }
 
         .contents:hover #atomic-mass{
             font-size: 0.07em!important;
+            color: red;
         }
     }
