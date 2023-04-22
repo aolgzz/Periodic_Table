@@ -1,0 +1,650 @@
+/*!
+ *
+ *      Interactive Periodic Table
+ *      Copyright (c) 2023 Arturo Olivares
+ *      Licensed under the MIT license
+ *      responsiveness.css
+ *
+ */
+
+/* Small mobiles */
+@media screen and (min-width: 240px) and (max-width: 359px){
+    .period{
+        padding: 0!important;
+        border: 0.5px solid transparent;
+        height: 7.5px!important;
+    }
+
+    .element-cell, .void{
+        width: 7px;
+        height: 7px;
+        border: 0.5px solid black;
+        margin: 0.5px!important;
+    }
+    
+    .void{
+        border: 0.5px solid transparent;
+    }
+
+    .contents{
+        width: 7px;
+        height: 7px;
+    }
+
+    p{
+        font-size: 4px;
+    }
+
+    img{
+        height: 5px;
+        width: 5px
+    }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 6.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 8px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 3.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 4.1px;
+    }
+
+    /* END */
+ 
+    .contents:hover{
+        width: 12px;
+        height: 12px;
+        backdrop-filter: blur(2px);
+        border: 0.3px solid black;
+    }
+
+    .contents:hover p{
+        margin: 0.3px!important;
+    }
+      
+    .contents:hover #elem-symbol,
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 0.8px!important;
+    }
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover p,
+    #cell-6-16 .contents:hover p,
+    #cell-6-17 .contents:hover p,
+    #cell-6-18 .contents:hover p,
+    #cell-7-1 .contents:hover p,
+    #cell-7-2 .contents:hover p,
+    #cell-7-4 .contents:hover p,
+    #cell-7-5 .contents:hover p,
+    #cell-7-6 .contents:hover p,
+    #cell-7-7 .contents:hover p,
+    #cell-7-8 .contents:hover p,
+    #cell-7-9 .contents:hover p,
+    #cell-7-10 .contents:hover p,
+    #cell-7-11 .contents:hover p,
+    #cell-7-12 .contents:hover p,
+    #cell-7-13 .contents:hover p,
+    #cell-7-14 .contents:hover p,
+    #cell-7-15 .contents:hover p,
+    #cell-7-16 .contents:hover p,
+    #cell-7-17 .contents:hover p,
+    #cell-7-18 .contents:hover p{
+        font-size: 0.7px;
+        margin: 0.15px!important;
+    }
+
+    #cell-5-7 .contents:hover #atomic-mass,
+    #cell-6-16 .contents:hover #atomic-mass,
+    #cell-6-17 .contents:hover #atomic-mass,
+    #cell-6-18 .contents:hover #atomic-mass,
+    #cell-7-1 .contents:hover #atomic-mass,
+    #cell-7-2 .contents:hover #atomic-mass,
+    #cell-7-4 .contents:hover #atomic-mass,
+    #cell-7-5 .contents:hover #atomic-mass,
+    #cell-7-6 .contents:hover #atomic-mass,
+    #cell-7-7 .contents:hover #atomic-mass,
+    #cell-7-8 .contents:hover #atomic-mass,
+    #cell-7-9 .contents:hover #atomic-mass,
+    #cell-7-10 .contents:hover #atomic-mass,
+    #cell-7-11 .contents:hover #atomic-mass,
+    #cell-7-12 .contents:hover #atomic-mass,
+    #cell-7-13 .contents:hover #atomic-mass,
+    #cell-7-14 .contents:hover #atomic-mass,
+    #cell-7-15 .contents:hover #atomic-mass,
+    #cell-7-16 .contents:hover #atomic-mass,
+    #cell-7-17 .contents:hover #atomic-mass,
+    #cell-7-18 .contents:hover #atomic-mass{
+        font-size: 0.5px!important;
+    }
+
+    .contents:hover #elem-radioactivity{
+        font-size: 0.5px;
+    }
+    
+}
+/******************************************************************************************/ 
+
+/*  Smartphones */
+@media screen and (min-width: 360px) and (max-width: 599px) {
+    .period{
+        padding: 0!important;
+        border: 1px solid transparent;
+        height: 10.5px!important;
+    }
+
+    .element-cell, .void{
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+        margin: 0.5px!important;
+    }
+    
+    .void{
+        border: 1px solid transparent;
+    }
+
+    .contents{
+        width: 10px;
+        height: 10px;
+    }
+
+    p{
+        font-size: 5px;
+    }
+   
+    img{
+        height: 6px;
+        width: 6px
+    }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 7.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 9px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 4.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 5.1px;
+    }
+
+    /* END */
+
+    .contents:hover{
+        width: 17px;
+        height: 17px;
+        backdrop-filter: blur(2px);
+        border: 0.5px solid black;
+    }   
+
+    .contents:hover #elem-symbol,
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 1px!important;
+    }
+
+    .contents:hover #elem-radioactivity{
+        font-size: 1px;
+    }
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover,
+    #cell-6-16 .contents:hover,
+    #cell-6-17 .contents:hover,
+    #cell-6-18 .contents:hover,
+    #cell-7-1 .contents:hover,
+    #cell-7-2 .contents:hover,
+    #cell-7-4 .contents:hover,
+    #cell-7-5 .contents:hover,
+    #cell-7-6 .contents:hover,
+    #cell-7-7 .contents:hover,
+    #cell-7-8 .contents:hover,
+    #cell-7-9 .contents:hover,
+    #cell-7-10 .contents:hover,
+    #cell-7-11 .contents:hover,
+    #cell-7-12 .contents:hover,
+    #cell-7-13 .contents:hover,
+    #cell-7-14 .contents:hover,
+    #cell-7-15 .contents:hover,
+    #cell-7-16 .contents:hover,
+    #cell-7-17 .contents:hover,
+    #cell-7-18 .contents:hover{
+        font-size: 1px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+/******************************************************************************************/ 
+
+/* Large Smartphones/Phablets */
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .period{
+        padding: 0!important;
+        border: 0.5px solid transparent;
+        height: 26.5px!important;
+    }
+
+    .element-cell, .void{
+        width: 25px;
+        height: 25px;
+        border: 1px solid black;
+        margin: 0.5px!important;
+    }
+    
+    .void{
+        border: 1px solid transparent;
+    }
+
+    .contents{
+        width: 25px;
+        height: 25px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    img{
+        height: 10px;
+        width: 10px
+    }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 10.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 13px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 7.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 8.1px;
+    }
+
+    /* END */
+ 
+    .contents:hover{
+        width: 23px;
+        height: 23px;
+        backdrop-filter: blur(2px);
+        border: 0.5px solid black;
+    }
+
+    .contents:hover p{
+        margin: 0.3px!important;
+    }
+      
+    .contents:hover #elem-symbol,
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 1.8px!important;
+    }
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover p,
+    #cell-6-16 .contents:hover p,
+    #cell-6-17 .contents:hover p,
+    #cell-6-18 .contents:hover p,
+    #cell-7-1 .contents:hover p,
+    #cell-7-2 .contents:hover p,
+    #cell-7-4 .contents:hover p,
+    #cell-7-5 .contents:hover p,
+    #cell-7-6 .contents:hover p,
+    #cell-7-7 .contents:hover p,
+    #cell-7-8 .contents:hover p,
+    #cell-7-9 .contents:hover p,
+    #cell-7-10 .contents:hover p,
+    #cell-7-11 .contents:hover p,
+    #cell-7-12 .contents:hover p,
+    #cell-7-13 .contents:hover p,
+    #cell-7-14 .contents:hover p,
+    #cell-7-15 .contents:hover p,
+    #cell-7-16 .contents:hover p,
+    #cell-7-17 .contents:hover p,
+    #cell-7-18 .contents:hover p{
+        font-size: 1.2px;
+        margin: 0.15px!important;
+    }
+
+    #cell-5-7 .contents:hover #atomic-mass,
+    #cell-6-16 .contents:hover #atomic-mass,
+    #cell-6-17 .contents:hover #atomic-mass,
+    #cell-6-18 .contents:hover #atomic-mass,
+    #cell-7-1 .contents:hover #atomic-mass,
+    #cell-7-2 .contents:hover #atomic-mass,
+    #cell-7-4 .contents:hover #atomic-mass,
+    #cell-7-5 .contents:hover #atomic-mass,
+    #cell-7-6 .contents:hover #atomic-mass,
+    #cell-7-7 .contents:hover #atomic-mass,
+    #cell-7-8 .contents:hover #atomic-mass,
+    #cell-7-9 .contents:hover #atomic-mass,
+    #cell-7-10 .contents:hover #atomic-mass,
+    #cell-7-11 .contents:hover #atomic-mass,
+    #cell-7-12 .contents:hover #atomic-mass,
+    #cell-7-13 .contents:hover #atomic-mass,
+    #cell-7-14 .contents:hover #atomic-mass,
+    #cell-7-15 .contents:hover #atomic-mass,
+    #cell-7-16 .contents:hover #atomic-mass,
+    #cell-7-17 .contents:hover #atomic-mass,
+    #cell-7-18 .contents:hover #atomic-mass{
+        font-size: 1.2px!important;
+    }
+
+    .contents:hover #elem-radioactivity{
+        font-size: 1.2px;
+    }
+
+}
+/******************************************************************************************/ 
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .period{
+        padding: 0!important;
+        border: 0.5px solid transparent;
+        height: 32px!important;
+    }
+
+    .element-cell, .void{
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        margin: 0.5px!important;
+    }
+    
+    .void{
+        border: 1px solid transparent;
+    }
+
+    .contents{
+        width: 30px;
+        height: 30px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    img{
+        height: 13px;
+        width: 13px
+    }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 13.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 16px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 10.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 11.1px;
+    }
+
+    /* END */
+ 
+    .contents:hover{
+        width: 30px;
+        height: 30px;
+        backdrop-filter: blur(2px);
+        border: 0.5px solid black;
+    }
+
+    .contents:hover p{
+        margin: 0.3px!important;
+    }
+      
+    .contents:hover #elem-symbol,
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 2.6px!important;
+    }
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover p,
+    #cell-6-16 .contents:hover p,
+    #cell-6-17 .contents:hover p,
+    #cell-6-18 .contents:hover p,
+    #cell-7-1 .contents:hover p,
+    #cell-7-2 .contents:hover p,
+    #cell-7-4 .contents:hover p,
+    #cell-7-5 .contents:hover p,
+    #cell-7-6 .contents:hover p,
+    #cell-7-7 .contents:hover p,
+    #cell-7-8 .contents:hover p,
+    #cell-7-9 .contents:hover p,
+    #cell-7-10 .contents:hover p,
+    #cell-7-11 .contents:hover p,
+    #cell-7-12 .contents:hover p,
+    #cell-7-13 .contents:hover p,
+    #cell-7-14 .contents:hover p,
+    #cell-7-15 .contents:hover p,
+    #cell-7-16 .contents:hover p,
+    #cell-7-17 .contents:hover p,
+    #cell-7-18 .contents:hover p{
+        font-size: 1.5px;
+        margin: 0.15px!important;
+    }
+
+    #cell-5-7 .contents:hover #atomic-mass,
+    #cell-6-16 .contents:hover #atomic-mass,
+    #cell-6-17 .contents:hover #atomic-mass,
+    #cell-6-18 .contents:hover #atomic-mass,
+    #cell-7-1 .contents:hover #atomic-mass,
+    #cell-7-2 .contents:hover #atomic-mass,
+    #cell-7-4 .contents:hover #atomic-mass,
+    #cell-7-5 .contents:hover #atomic-mass,
+    #cell-7-6 .contents:hover #atomic-mass,
+    #cell-7-7 .contents:hover #atomic-mass,
+    #cell-7-8 .contents:hover #atomic-mass,
+    #cell-7-9 .contents:hover #atomic-mass,
+    #cell-7-10 .contents:hover #atomic-mass,
+    #cell-7-11 .contents:hover #atomic-mass,
+    #cell-7-12 .contents:hover #atomic-mass,
+    #cell-7-13 .contents:hover #atomic-mass,
+    #cell-7-14 .contents:hover #atomic-mass,
+    #cell-7-15 .contents:hover #atomic-mass,
+    #cell-7-16 .contents:hover #atomic-mass,
+    #cell-7-17 .contents:hover #atomic-mass,
+    #cell-7-18 .contents:hover #atomic-mass{
+        font-size: 1.5px!important;
+    }
+
+    .contents:hover #elem-radioactivity{
+        font-size: 1.5px;
+    }
+}
+/******************************************************************************************/ 
+
+/* Small Laptops/Netbooks */
+@media screen and (min-width: 992px) and (max-width: 1299px){
+    .period{
+        padding: 0!important;
+        border: 0.5px solid transparent;
+        height: 43.5px!important;
+    }
+
+    .element-cell, .void{
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 1px!important;
+    }
+    
+    .void{
+        border: 1px solid transparent;
+    }
+
+    .contents{
+        width: 40px;
+        height: 40px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    img{
+        height: 15px;
+        width: 15px
+    }
+
+    /* Optimized sizes */
+
+    /* Calcium, Zinc, Flerovium, Oganesson*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+        width: 15.5px;
+    }
+
+    /* Technetium, Ruthenium, Polonium, Francium, Nihonium, Tennessine*/
+    #cell-5-7 img, #cell-5-8 img, #cell-6-16 img, #cell-7-1 img, #cell-7-13 img, #cell-7-17 img{
+        width: 18px;
+    }
+
+    /* Arsenic */
+    #cell-4-15 img, #cell-7-4 img{
+        width: 12.5px;
+    }
+
+    /* Rutherfordium */
+    #cell-7-4 img{
+        width: 13.1px;
+    }
+
+    /* END */
+ 
+    .contents:hover{
+        width: 35px;
+        height: 35px;
+        backdrop-filter: blur(2px);
+        border: 0.5px solid black;
+    }
+
+    .contents:hover p{
+        margin: 0.3px!important;
+    }
+      
+    .contents:hover #elem-symbol,
+    .contents:hover #atomic-num,
+    .contents:hover #elem-img, 
+    .contents:hover #elem-name, 
+    .contents:hover #atomic-mass {
+        display: flex;
+        font-size: 2.6px!important;
+    }
+
+    /* Radioactive elements*/
+    #cell-5-7 .contents:hover p,
+    #cell-6-16 .contents:hover p,
+    #cell-6-17 .contents:hover p,
+    #cell-6-18 .contents:hover p,
+    #cell-7-1 .contents:hover p,
+    #cell-7-2 .contents:hover p,
+    #cell-7-4 .contents:hover p,
+    #cell-7-5 .contents:hover p,
+    #cell-7-6 .contents:hover p,
+    #cell-7-7 .contents:hover p,
+    #cell-7-8 .contents:hover p,
+    #cell-7-9 .contents:hover p,
+    #cell-7-10 .contents:hover p,
+    #cell-7-11 .contents:hover p,
+    #cell-7-12 .contents:hover p,
+    #cell-7-13 .contents:hover p,
+    #cell-7-14 .contents:hover p,
+    #cell-7-15 .contents:hover p,
+    #cell-7-16 .contents:hover p,
+    #cell-7-17 .contents:hover p,
+    #cell-7-18 .contents:hover p{
+        font-size: 1.5px;
+        margin: 0.2px!important;
+    }
+
+    #cell-5-7 .contents:hover #atomic-mass,
+    #cell-6-16 .contents:hover #atomic-mass,
+    #cell-6-17 .contents:hover #atomic-mass,
+    #cell-6-18 .contents:hover #atomic-mass,
+    #cell-7-1 .contents:hover #atomic-mass,
+    #cell-7-2 .contents:hover #atomic-mass,
+    #cell-7-4 .contents:hover #atomic-mass,
+    #cell-7-5 .contents:hover #atomic-mass,
+    #cell-7-6 .contents:hover #atomic-mass,
+    #cell-7-7 .contents:hover #atomic-mass,
+    #cell-7-8 .contents:hover #atomic-mass,
+    #cell-7-9 .contents:hover #atomic-mass,
+    #cell-7-10 .contents:hover #atomic-mass,
+    #cell-7-11 .contents:hover #atomic-mass,
+    #cell-7-12 .contents:hover #atomic-mass,
+    #cell-7-13 .contents:hover #atomic-mass,
+    #cell-7-14 .contents:hover #atomic-mass,
+    #cell-7-15 .contents:hover #atomic-mass,
+    #cell-7-16 .contents:hover #atomic-mass,
+    #cell-7-17 .contents:hover #atomic-mass,
+    #cell-7-18 .contents:hover #atomic-mass{
+        font-size: 1.5px!important;
+    }
+
+    .contents:hover #elem-radioactivity{
+        font-size: 1.5px;
+    }
+}
+
+/******************************************************************************************/ 

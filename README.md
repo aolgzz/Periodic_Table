@@ -1,3 +1,11 @@
+<!-- 
+  
+  Interactive Periodic Table v.2.0.0 - Copyright (c) 2023 Arturo Olivares
+  Licensed under the MIT license
+  index.html
+  
+-->
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">

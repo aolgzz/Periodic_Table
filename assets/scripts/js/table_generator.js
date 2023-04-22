@@ -1,9 +1,11 @@
-/*
-
-  Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
-  table_generator.js
-    
-*/
+/*!
+ *
+ *      Interactive Periodic Table
+ *      Copyright (c) 2023 Arturo Olivares
+ *      Licensed under the MIT license
+ *      table_generator.js
+ *
+ */
 
 const mainPeriodicTable = document.getElementById("main-periodic-table");
 

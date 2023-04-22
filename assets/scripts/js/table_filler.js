@@ -1,10 +1,11 @@
-/*
-
-  Interactive Periodic Table - Copyright 2023 (c) Arturo Olivares
-
-  table_filler.js
-    
-*/
+/*!
+ *
+ *      Interactive Periodic Table
+ *      Copyright (c) 2023 Arturo Olivares
+ *      Licensed under the MIT license
+ *      table_filler.js
+ *
+ */
 
 const elements = [
     {symbol: 'H', atomic_num: 1, name: 'Hydrogen', atomic_mass: 1.008, imgPath: 'assets/imgs/hydrogen.png'},
