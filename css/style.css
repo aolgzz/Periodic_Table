@@ -24,6 +24,7 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -34,8 +35,20 @@ body{
     margin-top: 20vh;
 }
 
+#f-block{
+    border: 1px solid blue;
+    display: block;
+    margin-top: 2vh;
+}
+
 .period{
     /* border: 1px solid green; */
+    width: fit-content;
+    display: block;
+}
+
+.row{
+    border: 1px solid green;
     width: fit-content;
     display: block;
 }
@@ -60,7 +73,7 @@ body{
 }
 
 
-.contents{
+.contents, .fcontents{
     width: 50px;
     height: 50px;
     /* border: 1px solid violet; */
@@ -83,8 +96,9 @@ i{
 
 /* Optimized sizes */
 
-    /* Calcium, Zinc, Flerovium, Oganesson*/
-    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img{
+    /* Calcium, Zinc, Flerovium, Oganesson, Protactinium, Neptunium, Americium*/
+    #cell-4-2 img, #cell-4-12 img, #cell-7-14 img, #cell-7-18 img, #fcell-1-3 img,
+    #fcell-1-5 img, #fcell-1-7 img{
         width: 25px;
     }
 
@@ -93,13 +107,18 @@ i{
         width: 30px;
     }
 
+    /* Plutonium */
+    #fcell-1-6 img{
+        width: 35px;
+    }
+
     /* Arsenic */
     #cell-4-15 img, #cell-7-4 img{
         width: 15px;
     }
 
-    /* Rutherfordium */
-    #cell-7-4 img{
+    /* Rutherfordium, Actinium, Curium, Lawrencium */
+    #cell-7-4 img, #fcell-1-1 img, #fcell-1-8 img, #fcell-1-15 img{
         width: 17px;
     }
 
@@ -116,7 +135,7 @@ p{
     display: none;
 }
 
-.contents:hover{
+.contents:hover, .fcontents:hover{
     border: 1px solid black;
     scale: 5;
     width: 50px;
@@ -128,15 +147,15 @@ p{
     flex-direction: column;
 }
 
-.contents:hover #elem-symbol{
+.contents:hover #elem-symbol, .fcontents:hover #elem-symbol{
     font-size: 0.35em;
 }
 
-.contents:hover #atomic-num,
-.contents:hover #elem-img, 
-.contents:hover #elem-name, 
+.contents:hover #atomic-num, .fcontents:hover #atomic-num,
+.contents:hover #elem-img,  .fcontents:hover #elem-img, 
+.contents:hover #elem-name, .fcontents:hover #elem-name,
 /* .contents:hover #elem-radioactivity, */
-.contents:hover #atomic-mass {
+.contents:hover #atomic-mass, .fcontents:hover #atomic-mass{
     display: flex;
     font-size: 0.3em;
 }
@@ -170,11 +189,11 @@ p{
 
 /* END */
 
-.contents:hover #elem-radioactivity,
-.contents:hover #atomic-num{
+.contents:hover #elem-radioactivity, .fcontents:hover #elem-radioactivity,
+.contents:hover #atomic-num, .fcontents:hover #atomic-num{
     font-size: 0.2em;
 }
 
-.contents:hover #atomic-mass{
+.contents:hover #atomic-mass, .fcontents:hover #atomic-mass{
     font-size: 0.17em!important;
 }
